@@ -1,8 +1,6 @@
 $(document).ready(function() {
 "use strict";
 
-
-
 // Contact Form
 var request;
 
@@ -62,7 +60,12 @@ $('.contact-form form').submit(function(event) {
 
   request.done(function (response, textStatus, jqXHR){
     $('.contact-form p.error').hide();
-    $('.contact-form p.message').html('Contact Form Submitted! We will be in touch soon.').fadeOut(2000);
+    $('.contact-form p.message').html('Contact Form Submitted! We will be in touch soon.').fadeOut(5000);
+    
+    setTimeout(function(){
+    window.location.assign('index.html');
+    }, 2000);
+    
   });
 
   request.fail(function (jqXHR, textStatus, errorThrown){

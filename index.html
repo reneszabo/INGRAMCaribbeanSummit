@@ -45,11 +45,7 @@
 
   google.maps.event.addDomListener(window, 'load', initialize);
 </script>
-<script type="text/javascript">
-  $(function() {
-    $( "#datepicker" ).datepicker();
-  });
-</script>
+
 <!-- Google Map Ends! -->
 
 </head>
@@ -69,7 +65,7 @@
         <li><a href="#scheadule">agenda</a></li>
         <li><a href="#registration">registration</a></li>
         <li><a href="#sponsors">sponsors</a></li>
-        <li><a href="#contact" class="open-contact-form">contact us</a></li>       
+        <li><a href="#contact">contact us</a></li>       
       </ul>
 
     </div>
@@ -77,14 +73,6 @@
 
     <!-- header container -->
     <div class="container">
-
-     
-
-      
-
-      
-
-      
 
     </div>
     <!-- header container ends! -->
@@ -297,47 +285,54 @@
       <!-- register form -->
       <div class="form">
 
-        <form action="" method="post">
+        <form action="register.php" method="post">
 
           <div class="sub_form">
 
           <h3>Dr. Mr. Ms. Mss.</h3>
 
-            <input type="text" name="lastname" placeholder="Last Name (as show in your passport)"/>
-            <input type="text" name="firstname" placeholder="First Name (as show in your passport)"/>
-            <select id="gender" name="gender" style="color:#aaa;">
-              <option value="0" selected disabled style="display:none;">Gender</option>
+            <input required="true" type="text" name="lastname" placeholder="Last Name (as show in your passport)"/>
+            <input required="true" type="text" name="firstname" placeholder="First Name (as show in your passport)"/>
+            <select required="true" id="gender" name="gender" style="color:#aaa;">
+              <option value="" selected disabled style="display:none;">Gender</option>
               <option value="Male">Male</option>
               <option value="Female">Female</option>
             </select>
             <!--<input id="datepicker" type="text" name="date" placeholder="Day of Birthday"/>-->
-            <input type="email" name="email" placeholder="Email"/>
-            <input type="text" name="company" placeholder="Company"/>
-            <input type="text" name="position" placeholder="Position Title"/>
+            <input required="true" type="email" name="email" placeholder="Email"/>
+            <input required="true" type="text" name="company" placeholder="Company"/>
+            <input required="true" type="text" name="position" placeholder="Position Title"/>
 
           </div>
 
           <div class="sub_form">
           <h3>Mail Adress</h3>
+            <!--
             <input class="radio" type="radio" name="home" value="Home" checked="true" />
             <label>Home</label>
             <input class="radio" type="radio" name="home" value="Office" />
             <label>Office</label>
-            <input type="text" name="adress" placeholder="Adress"/>
-            <input type="text" name="adress2" placeholder="Adress 2"/>
-            <input type="text" name="city" placeholder="City"/>
-            <input type="text" name="state" placeholder="Province / State"/>
-            <input type="text" name="zip" placeholder="Postal Code"/>
-            <input type="text" name="mobile" placeholder="Mobile Phone"/>
-            <input type="text" name="office" placeholder="Office Phone"/>
+            -->
+            <select required="true" id="home" name="home" style="color:#aaa;">
+              <option value="" selected disabled style="display:none;">Adress type</option>
+              <option value="Home">Home</option>
+              <option value="Office">Office</option>
+            </select>
+            <input required="true" type="text" name="adress" placeholder="Adress"/>
+            <input type="text" name="adress2" placeholder="Adress 2 (optional)"/>
+            <input required="true" type="text" name="city" placeholder="City"/>
+            <input required="true" type="text" name="state" placeholder="Province / State"/>
+            <input required="true" type="number" name="zip" placeholder="Postal Code"/>
+            <input required="true" type="number" name="mobile" placeholder="Mobile Phone"/>
+            <input required="true" type="number" name="office" placeholder="Office Phone"/>
 
             <h3>Travel Info</h3>
-            <input type="text" name="passport" placeholder="Passport Number"/>
-            <input type="text" name="country" placeholder="Country of Issue"/>
-            <input type="text" name="exp_date" placeholder="Expiration Day"/>
+            <input required="true" type="number" name="passport" placeholder="Passport Number"/>
+            <input required="true" type="text" name="country" placeholder="Country of Issue"/>
+            <input required="true" type="text" name="exp_date" placeholder="Expiration Day"/>
             
 
-            <h3>Allergies of Food Restrictions</h3>
+            <h3>Allergies of Food Restrictions (Optional)</h3>
             <input type="text" name="allergies" placeholder="Allergies"/>
             <input type="text" name="food" placeholder="Food Restriction (define)"/>
             
@@ -428,7 +423,7 @@
           <div class="venue">
             
             <p>To receive our rates </p>
-            <p>please contact <a href="mailto:INGRAMCaribbeanSummit2015@verlasinc.com">INGRAMCaribbeanSummit2015@verlasinc.com</a></p>
+            <p>please contact <a href="mailto:INGRAMCaribbeanSummit2015@verlasinc.com">us</a></p>
             
           </div>
 
@@ -440,18 +435,34 @@
     </div>
   </div>
   <!-- location ends! -->
-
+  
+  <a id="contact" class="anchor"></a>
   <!-- social -->
   <div class="social">
     <div class="container">
 
-      <div>
+      
         <h2>Contact</h2>
-        <p class="subtitle">If you need any information regarding your trip, please do not hesitate to contact us:<br>
-        <a href="#" class="open-contact-form">ingramcaribbeansummit2015@verlasinc.com</a></p>
+        <p class="subtitle">If you need any information regarding your trip, please do not hesitate to contact us:</p>
+ 
+        <div class="contact-form">
+          <!-- contact form -->
+          <div class="form">
+            <form action="contact.php" method="post">
+              <input type="text" name="name" placeholder="Name"/>
+              <input type="text" name="email" placeholder="Email"/>
+              <textarea name="message" placeholder="Message"></textarea>
+              <button name="submit" type="submit">Send Message</button>  
+            </form>
+          </div>
+          <!-- contact form ends! -->
 
-        
-      </div>
+        <!-- Do Not Remove! -->
+        <p class="error"></p>
+        <p class="message"></p>
+        <!-- Do Not Remove! Ends! -->
+       </div>
+       
 
     </div>
   </div>

@@ -8,7 +8,6 @@
 /* 6. Topics */
 /* 7. Speakers */
 /* 8. Schedule */
-/* 9. Testimonials */
 /* 10. Registration & Sponsors */
 /* 11. Footer Section */
 /* -------------------- */
@@ -232,7 +231,10 @@ a {
         text-align: center;
         font-size: 1.33333em;
         padding: 0 26px;
-        line-height: 50px; } }
+        line-height: 50px; } 
+        
+        
+        }
 
 .button {
   background: #074372;
@@ -514,98 +516,8 @@ a {
       .speaker strong {
         font-size: 1.22222em; } }
 
-.why {
-  background: black url("images/14gfPkZbw.jpg") no-repeat 50% 0 fixed;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("images/14gfPkZbw.jpg") no-repeat 50% 0 fixed;
-  /* Saf4+, Chrome */
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/14gfPkZbw.jpg") no-repeat 50% 0 fixed;
-  /* Chrome 10+, Saf5.1+ */
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/14gfPkZbw.jpg") no-repeat 50% 0 fixed;
-  /* FF3.6+ */
-  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/14gfPkZbw.jpg") no-repeat 50% 0 fixed;
-  /* IE10 */
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/14gfPkZbw.jpg") no-repeat 50% 0 fixed;
-  /* Opera 11.10+ */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/14gfPkZbw.jpg") no-repeat 50% 0 fixed;
-  /* W3C */
-  color: white;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-  .why .container {
-    padding: 48px 0; }
 
-/* 9. Testimonials */
-.testimonials {
-  background-color: white;
-  color: #888888;
-  padding: 70px 110px;
-  text-align: center;
-  margin-bottom: 70px;
-  position: relative; }
-  .testimonials h4 {
-    font-size: 1.85714em;
-    text-transform: uppercase;
-    color: black;
-    font-weight: 300;
-    margin-bottom: 35px;
-    background: url("images/quote.png") top center no-repeat;
-    padding: 25px 0 10px; }
-  .testimonials blockquote {
-    font-size: 1.28571em;
-    font-style: italic; }
-  .testimonials cite {
-    display: block;
-    font-style: normal;
-    font-size: 0.77778em;
-    margin-top: 20px;
-    color: #074372;
-    font-family: "Roboto Condensed", sans-serif; }
-    .testimonials cite span {
-      text-transform: uppercase;
-      color: black; }
-  .testimonials ul.flex-direction-nav {
-    list-style-type: none; }
-    .testimonials ul.flex-direction-nav .flex-prev, .testimonials ul.flex-direction-nav .flex-next {
-      display: block;
-      position: absolute;
-      width: 64px;
-      background-color: #074372;
-      color: white;
-      font-size: 1.9em;
-      padding: 14px 0;
-      top: 50%;
-      margin-top: -32px; }
-      .testimonials ul.flex-direction-nav .flex-prev:hover, .testimonials ul.flex-direction-nav .flex-next:hover {
-        background-color: #6fc096; }
-    .testimonials ul.flex-direction-nav .flex-prev {
-      left: -10px; }
-    .testimonials ul.flex-direction-nav .flex-next {
-      right: -10px; }
 
-.bullets {
-  padding: 0 30px; }
-  .bullets h3, .bullets h4 {
-    font-size: 1.71429em;
-    font-weight: 300; }
-  .bullets h3 {
-    text-transform: uppercase;
-    padding: 0 30px; }
-    @media all and (max-width: 780px) {
-      .bullets h3 {
-        padding: 0; } }
-  .bullets h4 {
-    color: #074372; }
-  .bullets div {
-    padding: 0 30px;
-    width: 50%;
-    min-height: 140px;
-    float: left; }
-    @media all and (max-width: 780px) {
-      .bullets div {
-        width: 100%;
-        padding: 0; } }
 
 /* 10. Registration & Sponsors */
 .registration .container, .sponsors .container {
@@ -627,9 +539,6 @@ a {
 .form {
   float: left;
   width: 100%; }
-  @media all and (max-width: 1180px) {
-    .form, .price {
-      width: 100%; } }
 
 .form {
   padding-right: 15px; }
@@ -637,6 +546,17 @@ a {
     .form {
       padding: 0;
       margin-bottom: 20px; } }
+      
+  @media screen and (max-width: 480px){
+    .form .sub_form{
+      width: 100%;
+    }
+    .form button{
+      width: 100%;
+    }
+  }
+  
+ 
 
 .form input, .form textarea, .form select {
   width: 100%;
@@ -673,61 +593,7 @@ a {
     background: white;
     color: black; }
 
-.price {
-  padding-left: 15px; }
-  @media all and (max-width: 1180px) {
-    .price {
-      padding: 0; } }
-  .price h4 {
-    font-size: 1.78571em;
-    font-weight: bold;
-    margin-top: 20px;
-    padding-right: 25px; }
-    .price h4 span {
-      color: #074372; }
-  .price p {
-    color: #888888;
-    margin-right: 25px; }
-  .price div {
-    border: 3px solid #f0f0f0;
-    position: relative;
-    height: 160px;
-    cursor: pointer;
-    margin-bottom: 10px;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out; }
-    @media all and (max-width: 640px) {
-      .price div {
-        height: auto;
-        padding: 10px; } }
-    .price div.active, .price div:hover {
-      border: 3px solid #074372; }
-    .price div:last-child {
-      margin-bottom: 0; }
-    .price div .amount {
-      background-color: #074372;
-      float: left;
-      height: 160px;
-      width: 160px;
-      margin: -3px 25px 0 -3px;
-      color: white;
-      font-family: "Roboto Condensed", sans-serif;
-      font-size: 3.42857em;
-      font-weight: bold;
-      line-height: 160px;
-      text-align: center; }
-      @media all and (max-width: 640px) {
-        .price div .amount {
-          height: auto;
-          width: auto;
-          margin: 0;
-          float: none;
-          line-height: 1;
-          background-color: white;
-          color: #074372;
-          text-align: left; } }
+
 
 .sponsors .container {
   position: relative; }
@@ -877,7 +743,7 @@ a {
         width: 100%; } }
   .social div {
     padding: 0 60px;
-    max-width: 1180px; }
+    max-width: 560px; }
   .social h2 {
     margin-bottom: 0; }
   .social .subtitle {
@@ -894,15 +760,7 @@ a {
     font-size: 18px; }
   .social button {
     cursor: pointer; }
-  .social button, .social a {
-    /*margin-right: 1px;
-    width: 60px;
-    text-align: center;
-    color: white;
-    background-color: black;
-    font-size: 24px; }
-    .social button:hover, .social a:hover {
-      color: #074372; */}
+
 
 /* 11. Footer Section */
 .footer {
@@ -929,12 +787,9 @@ a {
 
 .contact-form {
   padding: 50px 72px 72px;
-  width: 50%;
-  max-width: 675px;
-  border: 3px solid #f0f0f0;
-  background-color: white;
+  width: 100%;
   text-align: left;
-  margin-top: 10%;
+  margin-top: 5%;
   position: relative;
   font-family: "Roboto Condensed", sans-serif; }
   @media all and (max-width: 980px) {
@@ -1092,3 +947,46 @@ input[type="date"]:before {
     display: inline-block;
     vertical-align: top;
   }
+  
+  .social .form .sub_form{
+    padding: 0;
+    margin: 0 45px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  @media all and (max-width:480px){
+      .social .form .sub_form{
+      padding: 0;
+      display: inline-block;
+      vertical-align: top;
+      width: 100%;
+      margin: 0;
+    }
+    
+    .social div{
+      padding: 0 5%;
+    }
+    
+    .social button{
+      margin: 10px 0;
+    }
+  }
+  
+#message{
+   height: 150px;
+ }
+ 
+ #message textarea{
+   height: 100%;
+ }
+ 
+ .social .form form{
+   height: auto;
+ }
+ 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
