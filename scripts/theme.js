@@ -32,16 +32,6 @@ $(document).ready(function() {
     event.preventDefault();
   });
 
-  // Program Price select
-  var $pricebox = $('.price div');
-
-  $pricebox.click(function(event) {
-    $pricebox.removeClass('active');
-    $(this).addClass('active');
-
-    $('.registration input[name="program"]').val($(this).find('h4').text() + ' ' + $(this).find('.amount').text());
-
-  });
 
   // Register Scroll
   $('.register-now a').click(function(event) {
@@ -96,7 +86,7 @@ $(document).ready(function() {
     animation: 'slide',
     selector: 'ul li',
     controlNav: false,
-    directionNav: true,
+    directionNav: false,
     itemWidth: 311,
     prevText: '<i class="fa fa-chevron-left"></i>',
     nextText: '<i class="fa fa-chevron-right"></i>'

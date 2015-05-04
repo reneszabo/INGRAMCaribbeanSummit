@@ -1,5 +1,5 @@
 <?php
-
+  
   $to = "ingramcaribbeansummit2015@verlasinc.com";
   
   
@@ -47,12 +47,45 @@
              "Food Restrictions: " . $food 
              ;
   
-  $headers = "From: Ingram"."\r\n" . "Reply-To: Ingram"."\r\n";
-  mail($to, $subject, $message, $headers);
   
+  require 'lib/PHPMailer/PHPMailerAutoload.php';
+
+$mail = new PHPMailer;
+$mail->isSMTP();
+
+//Enable SMTP debugging
+// 0 = off (for production use)
+// 1 = client messages
+// 2 = client and server messages
+$mail->SMTPDebug = 0;
+
+$mail->Host = 'smtp.gmail.com';
+$mail->Port = 587;
+$mail->SMTPSecure = 'tls';
+$mail->SMTPAuth = true;
+$mail->Username = "ingramcaribbeansummit2015@verlas.com.ve";
+$mail->Password = "ingram123";
+$mail->setFrom('ingramcaribbeansummit2015@verlasinc.com', 'Ingram Caribbean Summit 2015');
+$mail->addReplyTo($to, 'Ingram Caribbean Summit 2015');
+$mail->addAddress($to, 'Ingram Caribbean Summit 2015');
+$mail->Subject = $subject;
+
+//body
+$mail->msgHTML($message);
+
+//Replace the plain text body with one created manually
+$mail->AltBody = 'This is a plain-text message body';
+
+if (!$mail->send()) {
   echo "<script type='text/javascript'>
+        alert('Sorry but your message could not be sent, try again later!');
+        window.location.assign('index.html');
+        </script>";
+} else {
+    echo "<script type='text/javascript'>
         alert('Registration successfully sent!');
         window.location.assign('index.html');
         </script>";
+}
 
 ?>
