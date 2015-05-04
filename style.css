@@ -1072,3 +1072,21 @@ button{
     }
     
 }
+
+.container{
+  padding-top: 5%;
+}
+
+.registration .container, .sponsors .container{
+  padding-top: 6%;
+}
+
+.schedule .container .tabs .tab{
+  width: 130px;
+  height: 60px;
+  background-color: #074372;
+  color: white;
+  font-weight: 700;
+  padding: 20px 25px;
+  margin: 0;
+}

@@ -1,7 +1,5 @@
 <?php
-// Prueba
-// jdsofdfsdf
-// ves como sale el cambio aqui
+
 require 'lib/PHPMailer/PHPMailerAutoload.php';
 
 $mail = new PHPMailer;
