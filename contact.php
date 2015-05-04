@@ -20,7 +20,7 @@ $mail->Password = "ingram123";
 $mail->setFrom('ingramcaribbeansummit2015@verlasinc.com', 'Ingram Caribbean Summit 2015');
 $mail->addReplyTo('ingramcaribbeansummit2015@verlasinc.com', 'Ingram Caribbean Summit 2015');
 //$mail->addAddress('ingramcaribbeansummit2015@verlasinc.com', 'Ingram Caribbean Summit 2015');
-$mail->addAddress('renrique.92@gmail.com', 'Rafael Sendrea');
+$mail->addAddress('ingramcaribbeansummit2015@verlasinc.com', 'Ingram Caribbean Summit 2015');
 $mail->Subject = 'Contact Form';
 
 $name = $_POST['name'];
