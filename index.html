@@ -306,8 +306,15 @@
 
           <div class="sub_form">
 
-          <h3>Dr. Mr. Ms. Mss.</h3>
-
+          <h3>Basic Info</h3>
+  
+            <select required="true" id="title" name="title" style="color:#aaa;">
+              <option value="" selected disabled style="display:none;">Title</option>
+              <option value="Dr.">Dr.</option>
+              <option value="Mr.">Mr.</option>
+              <option value="Ms.">Ms.</option>
+              <option value="Mss.">Mss.</option>
+            </select>
             <input required="true" type="text" name="lastname" placeholder="Last Name (as show in your passport)"/>
             <input required="true" type="text" name="firstname" placeholder="First Name (as show in your passport)"/>
             <select required="true" id="gender" name="gender" style="color:#aaa;">

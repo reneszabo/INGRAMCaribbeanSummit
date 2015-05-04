@@ -2,7 +2,7 @@
   
   $to = "ingramcaribbeansummit2015@verlasinc.com";
   
-  
+  $title = $_POST['title'];
   $firstname = $_POST['firstname'];
   $lastname = $_POST['lastname'];
   $gender = $_POST['gender'];
@@ -26,7 +26,8 @@
   
   $subject = "Registration Petition";
   
-  $message = "First Name: " . $firstname . "\r\n" .
+  $message = "Title: " . $title . "\r\n" .
+             "First Name: " . $firstname . "\r\n" .
              "Last Name: " . $lastname . "\n" .
              "Gender: " . $gender . "\n" .
              "Email: " . $email . "\n" .
