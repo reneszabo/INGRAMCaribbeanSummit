@@ -1,76 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-<meta charset="utf-8">
-<title>Ingram</title>
+  <head>
+    <meta charset="utf-8">
+    <title>Ingram</title>
 
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
 
-<link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" />
-<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-<link href="animate.min.css" rel="stylesheet" />
-<link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link href="animate.min.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
 
-<!-- Google Map -->
-<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-<script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script>
 
-  function initialize() {
-
-
-    var myLatlng = new google.maps.LatLng(38.9028396, -77.0527652);
-    var map_options = {
-      zoom: 16,
-      mapTypeId: google.maps.MapTypeId.ROADMAP,
-      center: myLatlng,
-      scrollwheel: false,
-      disableDefaultUI: true
-    }
-
-    var map = new google.maps.Map(document.getElementById('map_canvas'), map_options)
-    var myIcon = new google.maps.MarkerImage('images/map_icon.png', null, null, null, new google.maps.Size(36,54));
-
-    var marker = new google.maps.Marker({
-      position: myLatlng,
-      map: map,
-      icon: myIcon
-    });
-
-  }
+      function initialize() {
 
 
+        var myLatlng = new google.maps.LatLng(38.9028396, -77.0527652);
+        var map_options = {
+          zoom: 16,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          center: myLatlng,
+          scrollwheel: false,
+          disableDefaultUI: true
+        }
 
-  google.maps.event.addDomListener(window, 'load', initialize);
-</script>
+        var map = new google.maps.Map(document.getElementById('map_canvas'), map_options)
+        var myIcon = new google.maps.MarkerImage('images/map_icon.png', null, null, null, new google.maps.Size(36, 54));
 
-<!-- Google Map Ends! -->
+        var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          icon: myIcon
+        });
 
-</head>
+      }
 
-<body>
-<div id="menu" class="menu">
 
-      <ul>
-        <li><a href="#speakers">exhibitors</a></li>
-        <li><a href="#scheadule">agenda</a></li>
-        <li><a href="#registration">registration</a></li>
-        <li><a href="#sponsors">sponsors</a></li>
-        <li><a href="#location">hotel</a></li>  
-        <li><a href="#contact">contact us</a></li>       
-      </ul>
-<div class="logo"><a href="index.html">INGRAM CARIBBEAN SUMMIT 2015</a></div>
-</div>
 
-<!--<div class="page">-->
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 
-  <!-- header -->
-  <div class="header">
+    <!-- Google Map Ends! -->
 
-    <!-- menu -->
-    <!--div id="menu" class="menu">
+  </head>
+
+  <body>
+    <div id="menu" class="menu">
 
       <ul>
         <li><a href="#speakers">exhibitors</a></li>
@@ -80,45 +61,64 @@
         <li><a href="#location">hotel</a></li>  
         <li><a href="#contact">contact us</a></li>       
       </ul>
-      
+      <div class="logo"><a href="index.html">INGRAM CARIBBEAN SUMMIT 2015</a></div>
+    </div>
+
+    <!--<div class="page">-->
+
+    <!-- header -->
+    <div class="header">
+
+      <!-- menu -->
+      <!--div id="menu" class="menu">
+  
+        <ul>
+          <li><a href="#speakers">exhibitors</a></li>
+          <li><a href="#scheadule">agenda</a></li>
+          <li><a href="#registration">registration</a></li>
+          <li><a href="#sponsors">sponsors</a></li>
+          <li><a href="#location">hotel</a></li>  
+          <li><a href="#contact">contact us</a></li>       
+        </ul>
+        
       <!--<div class="logo"><a href="index.html">INGRAM CARIBBEAN SUMMIT 2015</a></div>-->
 
-    <!--/div>
-    <!-- menu ends! -->
+      <!--/div>
+      <!-- menu ends! -->
 
-    <!-- header container -->
-    <div class="container">
+      <!-- header container -->
+      <div class="container">
 
-    </div>
-    <!-- header container ends! -->
-
-  </div>
-  <!-- header ends! -->
-  
-  <!-- topics -->
-  <div class="topics">
-    <div class="container">
-
-      <h2>About</h2>
-      <div id="about_image">
-        <img src="images/about.jpg" alt="">
       </div>
+      <!-- header container ends! -->
 
-      <p>Our agenda will include personal business mettings between select vendors & exclusive customers while engaging in team building activities and sessions that encourage all participants to create and exchange knowledge and experience</p>
-      <p id="about_text_especial">Because in Washington BIG decisions are taken</p>
     </div>
-  </div>
-  <!-- topics ends! -->
+    <!-- header ends! -->
 
-  <a id="speakers" class="anchor"></a>
+    <!-- topics -->
+    <div class="topics">
+      <div class="container">
 
-  <!-- speakers -->
-  <div class="speakers">
-    <div class="container">
+        <h2>About</h2>
+        <div id="about_image">
+          <img src="images/about.jpg" alt="">
+        </div>
+
+        <p>Our agenda will include personal business mettings between select vendors & exclusive customers while engaging in team building activities and sessions that encourage all participants to create and exchange knowledge and experience</p>
+        <p id="about_text_especial">Because in Washington BIG decisions are taken</p>
+      </div>
+    </div>
+    <!-- topics ends! -->
+
+    <a id="speakers" class="anchor"></a>
+
+    <!-- speakers -->
+    <div class="speakers">
+      <div class="container">
 
         <h2>Exhibitors</h2>
         <p class="subtitle"></p>
-        
+
 
         <!-- speaker -->
         <div class="single">
@@ -169,306 +169,303 @@
         </div>
         <!-- speaker ends! -->
 
-        
 
+
+      </div>
     </div>
-  </div>
-  <!-- speakers ends! -->
+    <!-- speakers ends! -->
 
-  <a id="scheadule" class="anchor"></a>
+    <a id="scheadule" class="anchor"></a>
 
-  <!-- schedule -->
-  <div class="schedule">
-    <div class="container">
+    <!-- schedule -->
+    <div class="schedule">
+      <div class="container">
 
-      <h2>Agenda</h2>
-      <p class="subtitle"></p>
+        <h2>Agenda</h2>
+        <p class="subtitle"></p>
 
-      <div class="tabs">
+        <div class="tabs">
 
-        <!--<ul>
-          <li><a href="#tabs-1">Schedule</a></li> 
-        </ul>-->
-        
-        <div class="tab">Schedule</div>
-        
-        <!-- day -->
-        <div id="tabs-1" class="day">
+          <!--<ul>
+            <li><a href="#tabs-1">Schedule</a></li> 
+          </ul>-->
 
-          <!-- single event -->
-          <div class="event">
-            
-            <!-- event time -->
-            <div class="event-time">JUNE 22TH <span></span></div>
-            <!-- event time ends! -->
+          <div class="tab">Schedule</div>
 
-            <!-- event details -->
-            <div class="event-info">
+          <!-- day -->
+          <div id="tabs-1" class="day">
 
-              <div>
-                <h4>Arrivals</h4>
+            <!-- single event -->
+            <div class="event">
+
+              <!-- event time -->
+              <div class="event-time">JUNE 22TH <span></span></div>
+              <!-- event time ends! -->
+
+              <!-- event details -->
+              <div class="event-info">
+
+                <div>
+                  <h4>Arrivals</h4>
+                </div>
+
               </div>
+              <!-- event details ends! -->
 
             </div>
-            <!-- event details ends! -->
+            <!-- single event ends! -->
 
-          </div>
-          <!-- single event ends! -->
+            <!-- single event -->
+            <div class="event">
 
-          <!-- single event -->
-          <div class="event">
-            
-            <!-- event time -->
-            <div class="event-time">JUNE 23TH <span></span></div>
-            <!-- event time ends! -->
+              <!-- event time -->
+              <div class="event-time">JUNE 23TH <span></span></div>
+              <!-- event time ends! -->
 
-            <!-- event details -->
-            <div class="event-info">
+              <!-- event details -->
+              <div class="event-info">
 
-              <div>
-                <h4>Business meetings and Team building activities <br> Washington Tour</h4>
+                <div>
+                  <h4>Business meetings and Team building activities <br> Washington Tour</h4>
+                </div>
+
               </div>
+              <!-- event details ends! -->
 
             </div>
-            <!-- event details ends! -->
+            <!-- single event ends! -->
 
-          </div>
-          <!-- single event ends! -->
+            <!-- single event -->
+            <div class="event">
 
-          <!-- single event -->
-          <div class="event">
-            
-            <!-- event time -->
-            <div class="event-time">JUNE 24TH <span></span></div>
-            <!-- event time ends! -->
+              <!-- event time -->
+              <div class="event-time">JUNE 24TH <span></span></div>
+              <!-- event time ends! -->
 
-            <!-- event details -->
-            <div class="event-info">
+              <!-- event details -->
+              <div class="event-info">
 
-              <div>
-                <h4>Business meetings and Team building activities <br> Washington city Tour</h4>
+                <div>
+                  <h4>Business meetings and Team building activities <br> Washington city Tour</h4>
+                </div>
+
               </div>
+              <!-- event details ends! -->
 
             </div>
-            <!-- event details ends! -->
+            <!-- single event ends! -->
 
-          </div>
-          <!-- single event ends! -->
+            <!-- single event -->
+            <div class="event">
 
-          <!-- single event -->
-          <div class="event">
-            
-            <!-- event time -->
-            <div class="event-time">JUNE 24TH <span></span></div>
-            <!-- event time ends! -->
+              <!-- event time -->
+              <div class="event-time">JUNE 24TH <span></span></div>
+              <!-- event time ends! -->
 
-            <!-- event details -->
-            <div class="event-info">
+              <!-- event details -->
+              <div class="event-info">
 
-              <div>
-                <h4>Business meetings</h4>
+                <div>
+                  <h4>Business meetings</h4>
+                </div>
+
               </div>
+              <!-- event details ends! -->
 
             </div>
-            <!-- event details ends! -->
+            <!-- single event ends! -->
 
           </div>
-          <!-- single event ends! -->
+          <!-- day ends! -->
+
+
 
         </div>
-        <!-- day ends! -->
-
-        
 
       </div>
-
     </div>
-  </div>
-  <!-- schedule ends! -->
+    <!-- schedule ends! -->
 
 
 
-  <a id="registration" class="anchor"></a>
+    <a id="registration" class="anchor"></a>
 
-  <!-- registration -->
-  <div class="registration">
-    <div class="container">
+    <!-- registration -->
+    <div class="registration">
+      <div class="container">
 
-      <h2>Registration</h2>
-      
+        <h2>Registration</h2>
 
-      <h3></h3>
 
-      <!-- register form -->
-      <div class="form">
+        <h3></h3>
 
-        <form action="register.php" method="post">
+        <!-- register form -->
+        <div class="form">
 
-          <div class="sub_form">
+          <form action="register.php" method="post">
 
-          <h3>Basic Info</h3>
-  
-            <select required="true" id="title" name="title" style="color:#aaa;">
-              <option value="" selected disabled style="display:none;">Title</option>
-              <option value="Dr.">Dr.</option>
-              <option value="Mr.">Mr.</option>
-              <option value="Ms.">Ms.</option>
-              <option value="Mss.">Mss.</option>
-            </select>
-            <input required="true" type="text" name="lastname" placeholder="Last Name (as shown in your passport)"/>
-            <input required="true" type="text" name="firstname" placeholder="First Name (as shown in your passport)"/>
-            <select required="true" id="gender" name="gender" style="color:#aaa;">
-              <option value="" selected disabled style="display:none;">Gender</option>
-              <option value="Male">Male</option>
-              <option value="Female">Female</option>
-            </select>
-            <input required="true" id="datepicker" type="text" name="date" placeholder="Date of Birth"/>
-            <input required="true" type="email" name="email" placeholder="Email"/>
-            <input required="true" type="text" name="company" placeholder="Company"/>
-            <input required="true" type="text" name="position" placeholder="Charge"/>
+            <div class="sub_form">
 
-          </div>
+              <h3>Basic Info</h3>
 
-          <div class="sub_form">
-          <h3>Mailing Address</h3>
-            <!--
-            <input class="radio" type="radio" name="home" value="Home" checked="true" />
-            <label>Home</label>
-            <input class="radio" type="radio" name="home" value="Office" />
-            <label>Office</label>
-            -->
-            <select required="true" id="home" name="home" style="color:#aaa;">
-              <option value="" selected disabled style="display:none;">Address type</option>
-              <option value="Home">Home</option>
-              <option value="Office">Office</option>
-            </select>
-            <input required="true" type="text" name="adress" placeholder="Address"/>
-            <input type="text" name="adress2" placeholder="Address 2 (optional)"/>
-            <input required="true" type="text" name="city" placeholder="City"/>
-            <input required="true" type="text" name="state" placeholder="Province / State"/>
-            <input required="true" type="text" name="zip" placeholder="Postal Code"/>
-            <input required="true" type="number" name="mobile" placeholder="Mobile Phone"/>
-            <input required="true" type="number" name="office" placeholder="Office Phone"/>
+              <select required="true" id="title" name="title" style="color:#aaa;">
+                <option value="" selected disabled style="display:none;">Title</option>
+                <option value="Dr.">Dr.</option>
+                <option value="Mr.">Mr.</option>
+                <option value="Ms.">Ms.</option>
+                <option value="Mss.">Mss.</option>
+              </select>
+              <input required="true" type="text" name="lastname" placeholder="Last Name (as shown in your passport)"/>
+              <input required="true" type="text" name="firstname" placeholder="First Name (as shown in your passport)"/>
+              <select required="true" id="gender" name="gender" style="color:#aaa;">
+                <option value="" selected disabled style="display:none;">Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+              <input required="true" id="datepicker" type="text" name="date" placeholder="Date of Birth"/>
+              <input required="true" type="email" name="email" placeholder="Email"/>
+              <input required="true" type="text" name="company" placeholder="Company"/>
+              <input required="true" type="text" name="position" placeholder="Charge"/>
 
-            <h3>Travel Info</h3>
-            <input required="true" type="text" name="passport" placeholder="Passport Number"/>
-            <input required="true" type="text" name="country" placeholder="Country of Issue"/>
-            <input required="true" type="text" name="exp_date" placeholder="Expiration Date (DD/MM/YYYY)"/>
-            
+            </div>
 
-            <h3>Allergies of Food Restrictions (Optional)</h3>
-            <input type="text" name="allergies" placeholder="Allergies"/>
-            <input type="text" name="food" placeholder="Food Restriction (specify)"/>
-            
+            <div class="sub_form">
+              <h3>Mailing Address</h3>
+              <!--
+              <input class="radio" type="radio" name="home" value="Home" checked="true" />
+              <label>Home</label>
+              <input class="radio" type="radio" name="home" value="Office" />
+              <label>Office</label>
+              -->
+              <select required="true" id="home" name="home" style="color:#aaa;">
+                <option value="" selected disabled style="display:none;">Address type</option>
+                <option value="Home">Home</option>
+                <option value="Office">Office</option>
+              </select>
+              <input required="true" type="text" name="adress" placeholder="Address"/>
+              <input type="text" name="adress2" placeholder="Address 2 (optional)"/>
+              <input required="true" type="text" name="city" placeholder="City"/>
+              <input required="true" type="text" name="state" placeholder="Province / State"/>
+              <input required="true" type="text" name="zip" placeholder="Postal Code"/>
+              <input required="true" type="number" name="mobile" placeholder="Mobile Phone"/>
+              <input required="true" type="number" name="office" placeholder="Office Phone"/>
 
-          </div>
+              <h3>Travel Info</h3>
+              <input required="true" type="text" name="passport" placeholder="Passport Number"/>
+              <input required="true" type="text" name="country" placeholder="Country of Issue"/>
+              <input required="true" type="text" name="exp_date" placeholder="Expiration Date (DD/MM/YYYY)"/>
 
-          <center><button name="submit" type="submit">Confirm Your Order</button></center>
-        </form>
+
+              <h3>Allergies of Food Restrictions (Optional)</h3>
+              <input type="text" name="allergies" placeholder="Allergies"/>
+              <input type="text" name="food" placeholder="Food Restriction (specify)"/>
+
+
+            </div>
+
+            <center><button name="submit" type="submit">Confirm Your Order</button></center>
+          </form>
+
+        </div>
+        <!-- register form ends! -->
+
+
 
       </div>
-      <!-- register form ends! -->
-      
-      
-
     </div>
-  </div>
-  <!-- registration ends! -->
+    <!-- registration ends! -->
 
-  <a id="sponsors" class="anchor"></a>
+    <a id="sponsors" class="anchor"></a>
 
-  <!-- sponsors -->
-  <div class="sponsors">
-    <div class="container">
+    <!-- sponsors -->
+    <div class="sponsors">
+      <div class="container">
 
-      <h2>Sponsors</h2>
-      <!--<p class="subtitle">Interested in becoming a sponsor? <a href="#" class="open-contact-form">Get in touch</a></p>-->
+        <h2>Sponsors</h2>
+        <!--<p class="subtitle">Interested in becoming a sponsor? <a href="#" class="open-contact-form">Get in touch</a></p>-->
 
-      <div class="slides">
-        
+        <div class="slides">
+
           <a href="#"><img src="images/sponsor1.png" />
-          
-        
-      </div>
 
-    </div>
-  </div>
-  <!-- sponsors ends! -->
-
-  <a id="location" class="anchor"></a>
-
-  <!-- location -->
-  <div class="location">
-    <div class="container">
-
-      <h2>Hotel</h2>
-
-      <!-- info -->
-      <div class="info">
-
-        <div class="maps">
-
-          <div class="images">
-            <img src="images/placeholder.jpg" />
-          </div>
-
-          <!-- do not remove, needed for Google Map -->
-          <div id="map_canvas"></div>
-          <!-- do not remove ends! -->
-
-        </div>
-
-        <div class="address">
-
-          <h4>The Melrose Georgetown Hotel</h4>
-
-          <h5><i class="fa fa-chevron-right"></i> Address</h5>
-
-          <div class="venue">
-            
-            <p>2430 Pennsylvania Avenue NW</p>
-            <p>Washington, DC 20037</p>
-            
-          </div>
-
-          <h5><i class="fa fa-chevron-right"></i> Phones</h5>
-
-          <div class="venue">
-            
-            <p>Phone +1 202-955-6400</p>
-            <p>Fax +1 202-775-8489</p>
-            
-          </div>
-
-          <img src="images/hotel_logo.jpg" alt="hotel">
-
-          <h5><i class="fa fa-chevron-right"></i> Additional Information</h5>
-
-          <div class="venue">
-            
-            <p>To receive our rates </p>
-            <p>please contact <a href="mailto:INGRAMCaribbeanSummit2015@verlasinc.com">INGRAM</a></p>
-            
-          </div>
 
         </div>
 
       </div>
-      <!-- info ends! -->
-    
     </div>
-  </div>
-  <!-- location ends! -->
-  
-  <a id="contact" class="anchor"></a>
-  <!-- social -->
-  <div class="social">
-    <div class="container">
+    <!-- sponsors ends! -->
 
-      
+    <a id="location" class="anchor"></a>
+
+    <!-- location -->
+    <div class="location">
+      <div class="container">
+
+        <h2>Hotel</h2>
+
+        <!-- info -->
+        <div class="info">
+
+          <div class="maps">
+
+            <div class="images">
+              <img src="images/placeholder.jpg" />
+            </div>
+
+            <!-- do not remove, needed for Google Map -->
+            <div id="map_canvas"></div>
+            <!-- do not remove ends! -->
+
+          </div>
+
+          <div class="address">
+
+            <h4>The Melrose Georgetown Hotel</h4>
+
+            <h5><i class="fa fa-chevron-right"></i> Address</h5>
+
+            <div class="venue">
+
+              <p>2430 Pennsylvania Avenue NW</p>
+              <p>Washington, DC 20037</p>
+
+            </div>
+
+            <h5><i class="fa fa-chevron-right"></i> Phones</h5>
+
+            <div class="venue">
+
+              <p>Phone +1 202-955-6400</p>
+              <p>Fax +1 202-775-8489</p>
+
+            </div>
+
+            <img src="images/hotel_logo.jpg" alt="hotel">
+
+            <h5><i class="fa fa-chevron-right"></i> Additional Information</h5>
+
+            <div class="venue">
+
+              <p>To receive our rates </p>
+              <p>please contact <a href="mailto:INGRAMCaribbeanSummit2015@verlasinc.com">INGRAM</a></p>
+
+            </div>
+
+          </div>
+
+        </div>
+        <!-- info ends! -->
+
+      </div>
+    </div>
+    <!-- location ends! -->
+
+    <a id="contact" class="anchor"></a>
+    <!-- social -->
+    <div class="social">
+      <div class="container">
         <h2>Contact</h2>
         <p class="subtitle">If you need any information regarding your trip, please do not hesitate to contact us:</p>
- 
         <div class="contact-form">
           <!-- contact form -->
           <div class="form">
@@ -480,70 +477,65 @@
             </form>
           </div>
           <!-- contact form ends! -->
+          <!-- Do Not Remove! -->
+          <p class="error"></p>
+          <p class="message"></p>
+          <!-- Do Not Remove! Ends! -->
+        </div>
 
-        <!-- Do Not Remove! -->
-        <p class="error"></p>
-        <p class="message"></p>
-        <!-- Do Not Remove! Ends! -->
-       </div>
-       
 
+      </div>
     </div>
-  </div>
-  <!-- social ends! -->
+    <!-- social ends! -->
 
-  <!-- footer -->
-  <div class="footer">
-    <div class="container">
+    <!-- footer -->
+    <div class="footer">
+      <div class="container">
 
-      <p>&copy;Copyright - 2015, Design by <a href="http://magovisual.com">magovisual.com</a></p>
+        <p>&copy;Copyright - 2015, Design by <a href="http://magovisual.com">magovisual.com</a></p>
 
+      </div>
     </div>
-  </div>
-  <!-- footer ends! -->
+    <!-- footer ends! -->
 
-<!--</div>-->
+    <!--</div>-->
 
-<!-- back to top -->
-<div class="back">
-  <div class="container">
+    <!-- back to top -->
+    <div class="back">
+      <div class="container">
 
-    <a href="#top"><i class="fa fa-angle-up fa-3x"></i></a>
+        <a href="#top"><i class="fa fa-angle-up fa-3x"></i></a>
 
-  </div>
-</div>
-<!-- back to top ends! -->
+      </div>
+    </div>
+    <!-- back to top ends! -->
 
 
-<!-- scripts -->
-<script src="scripts/jquery-1.11.0.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-<script src="scripts/flexslider/jquery.flexslider-min.js"></script>
-<script src="scripts/jquery.parallax-1.1.3.js"></script>
-<script src="scripts/jquery.inview.min.js"></script>
-<!--<script src="scripts/form.js"></script>-->
-<script src="scripts/theme.js"></script>
-<!-- scripts ends! -->
+    <!-- scripts -->
+    <script src="scripts/jquery-1.11.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="scripts/flexslider/jquery.flexslider-min.js"></script>
+    <script src="scripts/jquery.parallax-1.1.3.js"></script>
+    <script src="scripts/jquery.inview.min.js"></script>
+    <!--<script src="scripts/form.js"></script>-->
+    <script src="scripts/theme.js"></script>
+    <!-- scripts ends! -->
 
-<script>
-  $(document).scroll(function () {
-    var y = $(document).scrollTop(),
-        header = $("#menu");
-        
-
-    if (y >= 0) {
-        header.addClass('fixed');
-        
-    } else {
-        header.removeClass('fixed');
-        
-    }
-});
-</script>
-<script>
-  $(function() {
-    $( "#datepicker" ).datepicker();
-  });
-  </script>
-</body>
+    <script>
+      $(document).scroll(function () {
+        var y = $(document).scrollTop(),
+                header = $("#menu");
+        if (y >= 0) {
+          header.addClass('fixed');
+        } else {
+          header.removeClass('fixed');
+        }
+      });
+    </script>
+    <script>
+      $(function () {
+        $("#datepicker").datepicker();
+      });
+    </script>
+  </body>
 </html>
