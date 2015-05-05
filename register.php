@@ -32,7 +32,7 @@
              "Gender: " . $gender . "\n" .
              "Email: " . $email . "\n" .
              "Company: " . $company . "\n" .
-             "Position: " . $position . "\n" .
+             "Charge: " . $position . "\n" .
              "Type of Adress: " . $home . "\n" .
              "Adress: " . $adress . "\n" .
              "Adress 2: " . $adress2 . "\n" .
