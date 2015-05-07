@@ -17,7 +17,7 @@
   $zip = $_POST['zip'];
   $mobile = $_POST['mobile'];
   $office = $_POST['office'];
-  $passport = $_POST['adress'];
+  $passport = $_POST['passport'];
   $country = $_POST['country'];
   $exp_date = $_POST['exp_date'];
   $allergies = $_POST['allergies'];
@@ -32,9 +32,9 @@
              "Gender: " . $gender . "\n" .
              "Email: " . $email . "\n" .
              "Company: " . $company . "\n" .
-             "Charge: " . $position . "\n" .
+             "Position: " . $position . "\n" .
              "Type of Adress: " . $home . "\n" .
-             "Adress: " . $adress . "\n" .
+             "Adress 1: " . $adress . "\n" .
              "Adress 2: " . $adress2 . "\n" .
              "City: " . $city . "\n" .
              "State: " . $state . "\n" .
