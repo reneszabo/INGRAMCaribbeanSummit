@@ -1071,6 +1071,11 @@ button{
       height: auto;
     }
     
+    .sponsors img{
+      width: 100%;
+      height: auto;
+    }
+    
 }
 
 .container{
@@ -1089,4 +1094,29 @@ button{
   font-weight: 700;
   padding: 20px 25px;
   margin: 0;
+}
+
+.sponsors img{
+  width: 24%;
+  height: auto;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.sponsors h3{
+  text-align: center;
+  font-size: 2em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.schedule .info-agenda{
+  margin-top: 30px;
+  width: 80%;
+}
+
+.schedule .info-agenda h3{
+  font-size: 1.5em;
+  text-decoration: underline;
 }
