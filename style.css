@@ -134,7 +134,7 @@ a:hover {
 
 /* 5. Header */
 .header {
-  height: 1000px;
+  height: 1200px;
   background: #888888 url("images/back_menu.jpg") 50% 0 no-repeat fixed;
   background-size: cover;
   /*transition: background-image 1s ease-in-out;*/
@@ -1128,7 +1128,7 @@ button{
 
 /*HERO */
 #hero{
-  height: 800px;
+  height: 1200px;
   position: relative;
 }
 #hero img{
