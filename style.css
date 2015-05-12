@@ -134,17 +134,22 @@ a {
 
 /* 5. Header */
 .header {
-  height: 800px;
+  height: 1000px;
   background: #888888 url("images/back_menu.jpg") 50% 0 no-repeat fixed;
   background-size: cover;
+  /*transition: background-image 1s ease-in-out;*/
   color: white;
   z-index: 1;
-  -webkit-clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 80%);
-  clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 80%);
+  /*-webkit-clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 80%);
+  clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 80%);*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+   }
+  
+  /*.header:hover{
+    background: #888888 url("images/hotel.jpg") 50% 0 no-repeat fixed;
+  }*/
   @media all and (max-width: 940px) {
     .header {
       height: auto; } }
@@ -1100,7 +1105,7 @@ button{
   width: 24%;
   height: auto;
   display: inline-block;
-  vertical-align: bottom;
+  vertical-align: middle;
 }
 
 .sponsors h3{
