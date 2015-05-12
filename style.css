@@ -1080,7 +1080,12 @@ button{
     width: 100%;
     height: auto;
   }
-
+  
+  body #hero{
+  height: 200px;
+  position: relative;
+  margin-top: 90px;
+}
 }
 
 .container{
