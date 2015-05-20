@@ -68,16 +68,13 @@
 
     <!-- header -->
     <a id="home" class="anchor"></a>
-    <div id="hero">
-      <img src="images/collage1.jpg">
-      <img src="images/collage2.jpg" >
+    <div class="header">
+      <div id="logo_home"><img src="images/logo convencion.png" /></div>
     </div>
     <!-- header ends! -->
-
-
     <!-- topics -->
-    <div class="topics">
-      <div class="container">
+    <!--div class="topics">
+      <!--div class="container">
 
         <h2>About</h2>
         <div id="about_image">
@@ -166,111 +163,7 @@
 
         <div class="tabs">
 
-          <!--<ul>
-            <li><a href="#tabs-1">Schedule</a></li> 
-          </ul>-->
-
           <div class="tab">Schedule</div>
-
-          <!-- day -->
-          <!--          <div id="tabs-1" class="day">
-          
-                       single event 
-                      <div class="event">
-          
-                         event time 
-                        <div class="event-time">Tues 23th. June <span></span></div>
-                         event time ends! 
-          
-                         event details 
-                        <div class="event-info">
-          
-                          <div>
-                            <h4>Arrivals & Registration All Day</h4>
-                            <h4>Welcome Cocktail Sponsored</h4>
-                          </div>
-          
-                        </div>
-                         event details ends! 
-          
-                      </div>
-                       single event ends! 
-          
-                       single event 
-                      <div class="event">
-          
-                         event time 
-                        <div class="event-time">Weds 24th. June <span></span></div>
-                         event time ends! 
-          
-                         event details 
-                        <div class="event-info">
-          
-                          <div>
-                            <h4>Breakfast</h4>
-                            <h4>Meeting</h4>
-                            <h4>Sponsor Breakout</h4>
-                            <h4>Lunch</h4>
-                            <h4>Meeting</h4>
-                            <h4>Out-Door Team Activity</h4>
-                            <h4>Dinner</h4>
-                          </div>
-          
-                        </div>
-                         event details ends! 
-          
-                      </div>
-                       single event ends! 
-          
-                       single event 
-                      <div class="event">
-          
-                         event time 
-                        <div class="event-time">Thurs 25th. June <span></span></div>
-                         event time ends! 
-          
-                         event details 
-                        <div class="event-info">
-          
-                          <div>
-                            <h4>Breakfast</h4>
-                            <h4>Out-Door Team Activity</h4>
-                            <h4>Lunch</h4>
-                            <h4>Sponsor Breakout</h4>
-                            <h4>One-on-Ones</h4>
-                            <h4>Dinner</h4>
-                          </div>
-          
-                        </div>
-                         event details ends! 
-          
-                      </div>
-                       single event ends! 
-          
-                       single event 
-                      <div class="event">
-          
-                         event time 
-                        <div class="event-time">Friday 26th. June <span></span></div>
-                         event time ends! 
-          
-                         event details 
-                        <div class="event-info">
-          
-                          <div>
-                            <h4>Breakfast</h4>
-                            <h4>Checkout</h4>
-                          </div>
-          
-                        </div>
-                         event details ends! 
-          
-                      </div>
-                       single event ends! 
-          
-                    </div>-->
-          <!-- day ends! -->
-
 
 
         </div>
@@ -415,8 +308,9 @@
               <input type="text" name="food" placeholder="Food Restriction (specify)"/>
 
             </div>
-
-            <center><button name="submit" type="submit">Confirm Your Order</button></center>
+            <div id="button">
+            <button name="submit" type="submit">Confirm Your Order</button>
+            </div>
           </form>
 
         </div>
@@ -476,7 +370,19 @@
           <div class="maps">
 
             <div class="images">
-              <img src="images/placeholder.jpg" />
+              <!--<img src="images/placeholder.jpg" /-->
+                <div id="cf7" class="shadow">
+                    <img class="opaque" src="images/placeholder.jpg" />
+                    <img src="images/placeholder2.jpg" />
+                    <img src="images/placeholder3.jpg" />
+                    <img src="images/placeholder4.jpg" />
+                </div>
+                <p id="cf7_controls">
+                    <span class="selected">Image 1</span>
+                    <span>Image 2</span>
+                    <span>Image 3</span>
+                    <span>Image 4</span>
+                </p>
             </div>
 
             <!-- do not remove, needed for Google Map -->
@@ -593,17 +499,28 @@
         var y = $(document).scrollTop(),
                 header = $("#menu");
         if (y >= 0) {
-          header.addClass('fixed');
-        } else {
-          header.removeClass('fixed');
-        }
+          header.addClass('fixed');    
+        } 
       });
     </script>
     <script>
       $(function () {
         $("#datepicker").datepicker();
-        var heroHelper = false;
-        function hero() {
+        
+        
+      $("#cf7_controls").on('click', 'span', function() {
+        $("#cf7 img").removeClass("opaque");
+    
+        var newImage = $(this).index();
+    
+        $("#cf7 img").eq(newImage).addClass("opaque");
+    
+        $("#cf7_controls span").removeClass("selected");
+        $(this).addClass("selected");
+      });
+
+        //var heroHelper = false;
+        /*function hero() {
           console.log(heroHelper);
           if (heroHelper === true) {
             heroHelper = false;
@@ -614,7 +531,7 @@
           }
           setTimeout(hero, 5000);
         }
-        hero();
+        hero();*/
       });
     </script>
   </body>
