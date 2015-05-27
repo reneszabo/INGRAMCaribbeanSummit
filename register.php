@@ -10,8 +10,8 @@
   $company = $_POST['company'];
   $position = $_POST['position'];
   $home = $_POST['home'];
-  $adress = $_POST['adress'];
-  $adress2 = $_POST['adress2'];
+  $address = $_POST['address'];
+  $address2 = $_POST['address2'];
   $city = $_POST['city'];
   $state = $_POST['state'];
   $zip = $_POST['zip'];
@@ -33,9 +33,9 @@
              "Email: " . $email . "\n" .
              "Company: " . $company . "\n" .
              "Position: " . $position . "\n" .
-             "Type of Adress: " . $home . "\n" .
-             "Adress 1: " . $adress . "\n" .
-             "Adress 2: " . $adress2 . "\n" .
+             "Type of Address: " . $home . "\n" .
+             "Address 1: " . $address . "\n" .
+             "Address 2: " . $address2 . "\n" .
              "City: " . $city . "\n" .
              "State: " . $state . "\n" .
              "Postal Code: " . $zip . "\n" .
