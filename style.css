@@ -1086,6 +1086,15 @@ button{
     height: auto;
   }
   
+  #silver,#gold,blue{
+    padding-left:0;
+  }
+  
+  #blank{
+    display: none;
+  }
+ 
+  
   /*body #hero{
   height: 200px;
   position: relative;
@@ -1113,7 +1122,7 @@ button{
 }
 
 .sponsors img{
-  width: 18%;
+  width: 20%;
   height: auto;
   display: inline-block;
   vertical-align: middle;
@@ -1279,4 +1288,16 @@ p#cf7_controls {
   position: relative;
   top: 480px;
   margin: 0 auto;
+}
+
+#silver{
+  padding-left:15%;
+}
+
+#gold{
+  padding-left:35%;
+}
+
+#blue{
+  padding-left:42%;
 }
